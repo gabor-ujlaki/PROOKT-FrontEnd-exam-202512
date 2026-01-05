@@ -14,5 +14,8 @@ Határidő: január 5. (GIT-re feltenni)
 - források: www.istockphoto.com, freepic.com, fonts.google.com, freetouse.com, pinterest.com
 - fő állományok: index.html, booking.html, /css/style.css, /js/app.js
 # verzió 1.1
-hiba: stílusjegyek nem jelnnek meg és JS funkciók nem működnek GitHub portálon poublikált oldalon
+hiba: stílusjegyek nem jelennek meg és JS funkciók nem működnek GitHub portálon publikált oldalon
 javítás: . prefix minden path elé index.html és booking.html állományokban
+# verzió 1.2
+hiba: CSS állományban background-image property-vel megadott image állományok nem töltődnek be az oldalon
+javítás: .. prefix minden path elé style.css állományban 

@@ -84,12 +84,12 @@ nav a {
 
 /*sound: default image - muted*/
 #muteBtn.muted {
-  background-image: url("/img/mute_17481807_white.png");
+  background-image: url("../img/mute_17481807_white.png");
 }
 
 /*sound: active image - unmuted*/
 #muteBtn.unmuted {
-  background-image: url("/img/volume_17481809_white.png");
+  background-image: url("../img/volume_17481809_white.png");
 }
 
 #muteBtn {
@@ -163,19 +163,19 @@ nav a {
 }
 
 .carousel-container .slide-bg:nth-child(3) {
-  background-image: url("/img/istockphoto-938158500-2048x2048.jpg");
+  background-image: url("../img/istockphoto-938158500-2048x2048.jpg");
 }
 
 .carousel-container .slide-bg:nth-child(4) {
-  background-image: url("/img/istockphoto-650655146-2048x2048.jpg");
+  background-image: url("../img/istockphoto-650655146-2048x2048.jpg");
 }
 
 .carousel-container .slide-bg:nth-child(5) {
-  background-image: url("/img/istockphoto-502872140-2048x2048.jpg");
+  background-image: url("../img/istockphoto-502872140-2048x2048.jpg");
 }
 
 .carousel-container .slide-bg:nth-child(6) {
-  background-image: url("/img/istockphoto-1129343599-2048x2048.jpg");
+  background-image: url("../img/istockphoto-1129343599-2048x2048.jpg");
 }
 
 /*carousel - page turners*/
@@ -266,7 +266,7 @@ nav a {
   flex-grow: 1;
   border: 1px solid #ddd;
   border-radius: 15px;
-  background-image: url("./img/menucart_b.png");
+  background-image: url("../img/menucart_b.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
