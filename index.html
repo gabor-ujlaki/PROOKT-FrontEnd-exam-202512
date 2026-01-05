@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honolulu Star</title>
+    <link rel="icon" href="/img/2824889_20299b.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+
+    <audio id="myAudio" loop>
+        <source src="/media/audio/Zambolino - Surfing (freetouse.com).mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- header -->
+    <header>
+        <!-- hamburger menu toggle -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <!-- logo -->
+        <div class="logo">
+            <a href="#"><img src="/img/2824889_20299b.png" alt="home"></a>
+        </div>
+        <div class="caption">Honolulu Star Grill House</div>
+        <!-- navigation links -->
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">Rólunk</a></li>
+                <li><a href="#dishes">Ételek</a></li>
+                <li><a href="#bevareges">Italok</a></li>
+                <li><a href="booking.html">Foglalás</a></li>
+                <li><a href="#contact">Kapcsolat</a></li>
+            </ul>
+        </nav>
+        <!-- sound on/off button -->
+        <button type="button" id="muteBtn" class="muted">&nbsp;</button>
+    </header>
+
+    <!-- carousel -->
+    <section class="carousel-container">
+        <button type="button" class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button type="button" class="next" onclick="changeSlide(1)">&#10095;</button>
+
+        <div class="slide-bg carousel-slide active"></div>
+        <div class="slide-bg carousel-slide"></div>
+        <div class="slide-bg carousel-slide"></div>
+        <div class="slide-bg carousel-slide"></div>
+
+        <!-- indicator bar -->
+        <div class="carousel-indicators">
+            <div class="dot active" onclick="jumpToSlide(0)"></div>
+            <div class="dot" onclick="jumpToSlide(1)"></div>
+            <div class="dot" onclick="jumpToSlide(2)"></div>
+            <div class="dot" onclick="jumpToSlide(3)"></div>
+        </div>
+    </section>
+
+    <!-- about -->
+    <h2 id="about">Rólunk</h2>
+    <section class="about-section">
+        <div>
+            <p>
+                A történelmi világítótorony mellett, közvetlenül az óceán partján található a Honolulu Star Grill House,
+                amely immár 20 éve családi vállalkozásként várja vendégeit. Éttermünk specialitása a friss tengeri
+                fogások&nbsp;&mdash;&nbsp;a legjobb halak és rákok a helyi halászoktól&nbsp;&mdash;&nbsp;de a steak
+                rajongói sem maradnak éhesen. Hangulatos környezet,
+                lenyűgöző kilátás, autentikus hawaii vendégszeretet és ízek, amelyek felejthetetlenné teszik minden
+                pillanatot. Legyen szó romantikus vacsoráról, családi ünnepről vagy baráti
+                összejövetelről&nbsp;&mdash;&nbsp;nálunk az élmény garantált.
+            </p>
+        </div>
+    </section>
+
+    <!-- cards -->
+    <h2 id="dishes">Ételek</h2>
+    <section class="cards-container">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </section>
+
+    <h2 id="bevareges">Italok</h2>
+    <section class="cards-container">
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </section>
+
+    <!-- contact -->
+    <h2 id="contact">Kapcsolat</h2>
+    <section class="info-section">
+        <div class="map-box">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29747.14886186546!2d-157.83216510597015!3d21.255881648951675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c0072601db5542b%3A0xe26eefd2f8f7e1f8!2sDiamond%20Head%20Lighthouse!5e0!3m2!1shu!2shu!4v1766480674455!5m2!1shu!2shu"
+                title="location" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="text-box">
+            <div>
+                <h3>Honolulu Star Grill House</h3>
+                <p>3399 Diamond Head Rd,<br>
+                    Honolulu,<br>
+                    HI 96815,<br>
+                    USA<br>
+                    &#9743;&nbsp;+1 (808) 555-3890<br>&#9993;&nbsp;
+                    <a href="mailto:honolulustar@gmail.com">honolulustar@gmail.com</a>
+                </p>
+            </div>
+            <div>
+                <h3>Nyitvatartás</h3>
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>hétfő</td>
+                            <td><b>zárva</b></td>
+                        </tr>
+                        <tr>
+                            <td>keddtől csütörtökig</td>
+                            <td>12:00 - 21:00</td>
+                        </tr>
+                        <tr>
+                            <td>pénteken és szombaton</td>
+                            <td>13:00 - 24:00</td>
+                        </tr>
+                        <tr>
+                            <td>vasárnap</td>
+                            <td>13:00 - 21:00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy;2025 Hawaii Lighthouse Mediaworks</p>
+    </footer>
+
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

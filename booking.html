@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honolulu Star&nbsp;&mdash;&nbsp;Foglalás</title>
+    <link rel="icon" href="/img/2824889_20299b.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+
+    <audio id="myAudio" loop>
+        <source src="/media/audio/Zambolino - Surfing (freetouse.com).mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- header -->
+    <header>
+        <!-- hamburger menu toggle -->
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <!-- logo -->
+        <div class="logo">
+            <a href="index.html"><img src="/img/2824889_20299b.png" alt="home"></a>
+        </div>
+        <div class="caption">Honolulu Star Grill House</div>
+        <!-- navigation links -->
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#about">Rólunk</a></li>
+                <li><a href="index.html#dishes">Ételek</a></li>
+                <li><a href="index.html#bevareges">Italok</a></li>
+                <li><a href="#booking">Foglalás</a></li>
+                <li><a href="index.html#contact">Kapcsolat</a></li>
+            </ul>
+        </nav>
+        <!-- sound on/off button -->
+        <button type="button" id="muteBtn" class="muted">&nbsp;</button>
+    </header>
+
+    <!-- carousel -->
+    <section class="carousel-container">
+        <button type="button" class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button type="button" class="next" onclick="changeSlide(1)">&#10095;</button>
+
+        <div class="slide-bg carousel-slide active"></div>
+        <div class="slide-bg carousel-slide"></div>
+        <div class="slide-bg carousel-slide"></div>
+        <div class="slide-bg carousel-slide"></div>
+
+        <!-- indicator bar -->
+        <div class="carousel-indicators">
+            <div class="dot active" onclick="jumpToSlide(0)"></div>
+            <div class="dot" onclick="jumpToSlide(1)"></div>
+            <div class="dot" onclick="jumpToSlide(2)"></div>
+            <div class="dot" onclick="jumpToSlide(3)"></div>
+        </div>
+    </section>
+
+    <h2 id="booking">Asztalfoglalás</h2>
+    <div class="booking-section">
+        <div class="reservation-container">
+            <!-- <form id="bookingForm" action="booking.html" method="post"> -->
+            <form id="bookingForm">
+                <!-- guests: increase/decrease -->
+                <div class="form-group">
+                    <label>Vendégek száma:</label>
+                    <div class="number-control">
+                        <button type="button" onclick="changeGuests(-1)">-</button>
+                        <input type="number" id="guests" name="guests" value="2" min="1" max="10" readonly>
+                        <button type="button" onclick="changeGuests(1)">+</button>
+                    </div>
+                </div>
+
+                <!-- options for date -->
+                <div class="form-group">
+                    <label for="date">Dátum:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <!-- options for time: 12:00 - 24:00 -->
+                <div class="form-group">
+                    <label for="time">Időpont:</label>
+                    <select id="time" name="time" required>
+                        <option value="">Válasszon időpontot...</option>
+                        <option value="12:00">12:00</option>
+                        <option value="13:00">13:00</option>
+                        <option value="14:00">14:00</option>
+                        <option value="15:00">15:00</option>
+                        <option value="16:00">16:00</option>
+                        <option value="17:00">17:00</option>
+                        <option value="18:00">18:00</option>
+                        <option value="19:00">19:00</option>
+                        <option value="20:00">20:00</option>
+                        <option value="21:00">21:00</option>
+                        <option value="22:00">22:00</option>
+                        <option value="23:00">23:00</option>
+                        <option value="00:00">24:00</option>
+                    </select>
+                </div>
+
+                <!-- names -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="lastName">Vezetéknév:</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Kovács" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="firstName">Keresztnév:</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="János" required>
+                    </div>
+                </div>
+
+                <!-- email & email confirm -->
+                <div class="form-group">
+                    <label for="email">E-mail cím:</label>
+                    <input type="email" id="email" name="email" placeholder="kovacs.janos@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="emailConfirm">E-mail cím megerősítése:</label>
+                    <input type="email" id="emailConfirm" name="emailConfirm" placeholder="Ismételje meg az e-mailt"
+                        required>
+                </div>
+
+                <!-- note -->
+                <div class="form-group">
+                    <label for="message">Egyéb megjegyzés (pl. ételallergia):</label>
+                    <textarea id="message" name="message" rows="4"></textarea>
+                </div>
+
+                <!-- privacy -->
+                <div class="checkbox-group">
+                    <input type="checkbox" id="privacy" name="privacy" required>
+                    <label for="privacy">Elolvastam és elfogadom az <a href="#">adatvédelmi tájékoztatót</a>.</label>
+                </div>
+
+                <!-- submit -->
+                <button type="submit" class="submit-btn">Asztalfoglalás véglegesítése</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <p>&copy;2025 Hawaii Lighthouse Mediaworks</p>
+    </footer>
+
+    <script src="/js/app.js"></script>
+
+</body>
+
+</html>
