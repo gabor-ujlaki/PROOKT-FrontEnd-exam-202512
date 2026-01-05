@@ -266,7 +266,7 @@ nav a {
   flex-grow: 1;
   border: 1px solid #ddd;
   border-radius: 15px;
-  background-image: url("/img/menucart_b.png");
+  background-image: url("./img/menucart_b.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

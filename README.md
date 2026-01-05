@@ -13,3 +13,6 @@ Határidő: január 5. (GIT-re feltenni)
 - mappák: /img, /js, /media, /media/audio, /media/video, /style, /style/font
 - források: www.istockphoto.com, freepic.com, fonts.google.com, freetouse.com, pinterest.com
 - fő állományok: index.html, booking.html, /css/style.css, /js/app.js
+# verzió 1.1
+hiba: stílusjegyek nem jelnnek meg és JS funkciók nem működnek GitHub portálon poublikált oldalon
+javítás: . prefix minden path elé index.html és booking.html állományokban
